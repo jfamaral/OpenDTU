@@ -15,7 +15,7 @@ jobs:
 
       - name: Patch INV_MAX_COUNT (opcional)
         run: |
-          sed -i 's/^#define[[:space:]]\+INV_MAX_COUNT[[:space:]]\+[0-9]\+/#define INV_MAX_COUNT 16/' Include/Configuration.h
+          sed -i 's/^#define[[:space:]]\+INV_MAX_COUNT[[:space:]]\+[0-9]\+/#define INV_MAX_COUNT 20/' Include/Configuration.h
           echo "INV_MAX_COUNT agora é:"
           grep -n 'INV_MAX_COUNT' Include/Configuration.h || true
 
